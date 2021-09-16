@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="estilos.css">
+   <script src="javascript.js"></script>
+   <title>Agilidad Mental</title>
+   <link rel="shortcut icon" href="imagen_pensamiento2.jpeg" />
+</head>
+<body>
+   <div id="grid-container">
+      <div class="title"><h1>CALCULO MENTAL</h1></div>
+      <div class="div-imagen"><img src="imagen_pensamiento.jpeg" alt="imagen de pensamiento matematico" id="imagen"></div>
+      <div class="dificultad-word"><p>Dificultad</p></div>
+      <div class="opciones-dificultad">
+         <div><input type="button" value="FACIL" id="boton-facil" onclick="changeToEasy()"></div>
+         <div><input type="button" value="MEDIO" id="boton-medio" onclick="changeToMedium()"></div>
+         <div><input type="button" value="DIFICIL" id="boton-dificil" onclick="changeToDificult()"></div>
+      </div>
+      <div class="velocidad"><p>Velocidad</p></div>
+      <div class="control-velocidad">
+         <div id="etiqueta1">2</div>
+         <input type="range" value="2" min="1" max="10" autocomplete="off" id="barra-velocidad"></div>
+      <div class="cantidad"><p>Cantidad</p></div>
+      <div class="control-cantidad">
+         <div id="etiqueta2">10</div>
+         <input type="range" value="10" min="5" max="50" autocomplete="off" id="barra-cantidad"></div>
+      <div class="empezar"><input type="button" value="START" class="boton-empezar" onclick="empezar()"></div>
+   </div>
+   <div id="printPantalla">hola que hace</div>
+   <input type="button" value="VOLVER" id="boton-volver" onclick="location.reload()">
+</body>
+</html>
